@@ -11,7 +11,10 @@ image = cv2.imread('L.jpg',0)
 
 #To display an image to the screen, use the imshow function
 cv2.imshow('Image',image)
-#Keeps the image open until the user presses a key, any key
+# cv2.waitKey(int)
+# If the argument is > 0, it waits for that many milliseconds for
+# a key input before it stops displaying on the screen.
+# If argument <=0, it waits infinitely for a key input
 cv2.waitKey()
 #Close all the active windows which you have drawn on the screen
 cv2.destroyAllWindows()
